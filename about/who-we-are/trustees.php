@@ -1,16 +1,18 @@
-<?php include_once '../../header.php'; ?>
+<?php include_once '../../header.php'; 
 
+$hero_title = "Trustees";
+
+$hero_image = $root_folder .
+    "assets/img/trustees.webp";
+
+$hero_subtitle =
+    "We are fortunate to have a highly dedicated Board of Trustees, who share a vast array of skills and experience.";
+
+include_once "../../hero.php";
+
+?>
 <style>
-    .lead{
-        display: block;
-        font-size: 1.2em;
-        background-color: #1c1cad;
-        color: #ffffff;
-        padding: 10px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .trustee {
+/*     .trustee {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
@@ -20,24 +22,56 @@
         width: 150px;
         height: auto;
         margin-right: 20px;
-    }
+    } */
+    .trustees-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
 
-    .trustee h3 {
+.trustee-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.trustee-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.role {
+    font-weight: 600;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .trustees-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    .trustee-content>h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: small-caps;
         margin: 0;
     }
 
-    .trustee h4 {
-        margin: 5px 0;
+    .trustee-content>h4 {
+        margin-top: -3px;
+        font-size: 1rem;
+        font-weight: bold;
     }
 </style>
-<h1>Board of Trustees</h1>
-<strong class="lead">We are fortunate to have a highly dedicated Board of Trustees,
-    <br>who share a vast array of skills and experience.</strong>
 
-<div class="trustee">
-    <img src="../../assets/img/trustee-simon.webp" alt="Simon Knock">
-
-    <div class="trustee-content">
+<section class="trustees-grid">
+    <article class="trustee-card">
+        <img src="../../assets/img/trustee-simon.webp" alt="Simon Knock">
         <h3>SIMON KNOCK</h3>
         <h4>Chair</h4>
 
@@ -51,12 +85,10 @@
             excellent communication skills, and on occasions, also has a sense
             of humour!
         </p>
-    </div>
-</div>
+    </article>
 
-<div class="trustee">
+    <article class="trustee-card">
     <img src="../../assets/img/trustee-suzanne.webp" alt="Suzanne Goodall">
-
     <div class="trustee-content">
         <h3>SUZANNE GOODALL</h3>
         <h4>Trustee</h4>
@@ -70,13 +102,10 @@
             connection to The Dove Service and the difference they make to
             people who are dealing with bereavement and grief.
         </p>
-    </div>
-</div>
-
-<div class="trustee">
-    <img src="../../assets/img/trustee-chris.webp" alt="Chris Quayle">
-
-    <div class="trustee-content">
+    </article>
+    
+    <article class="trustee-card">
+        <img src="../../assets/img/trustee-chris.webp" alt="Chris Quayle">
         <h3>CHRIS QUAYLE</h3>
         <h4>Trustee</h4>
 
@@ -89,13 +118,12 @@
             daughters. He is keen on watching sport and is a season ticket
             holder at Port Vale.
         </p>
-    </div>
-</div>
-
-<div class="trustee">
-    <img src="../../assets/img/trustee-val.webp" alt="Val Nash">
-
-    <div class="trustee-content">
+    </article>
+    
+    
+    
+    <article class="trustee-card">
+        <img src="../../assets/img/trustee-val.webp" alt="Val Nash">
         <h3>VAL NASH</h3>
         <h4>Trustee</h4>
 
@@ -109,13 +137,12 @@
             and saw how moving people through grief and loss was instrumental in
             giving many of the clients she has supported.
         </p>
-    </div>
-</div>
+    </article>
+    
+    
+    <article class="trustee-card">
+        <img src="../../assets/img/trustee-linda.webp" alt="Dr. Linda Machin">
 
-<div class="trustee">
-    <img src="../../assets/img/trustee-linda.webp" alt="Dr. Linda Machin">
-
-    <div class="trustee-content">
         <h3>DR. LINDA MACHIN</h3>
         <h4>Honorary President</h4>
 
@@ -127,20 +154,17 @@
             internationally as a leading authority on bereavement and grief in
             adults.
         </p>
-    </div>
-</div>
+    </article>
 
-<div class="trustee">
-<img src="../../assets/img/trustee-you-avatar.webp" alt="You"> 
-<div class="trustee-content">
+    <article class="trustee-card">
+     <img src="../../assets/img/trustee-you-avatar.webp" alt="You">
 <h3>YOU</h3>
 <h4>Become a Trustee</h4>
-
-We are currently looking to expand our Board of Trustees and we could be looking for you!  As a member of our highly motivated and enthusiastic Board of Trustees you will play a key role in influencing the strategic direction of the organisation, setting overall policy, defining goals, setting targets and evaluating performance.  You will be instrumental in supporting the future development and growth of the organisation, using any specific knowledge or experience you have to help the Board of Trustees reach sound decisions.  This will involve scrutinizing Board papers, leading discussions, focusing on key issues, and providing advice and guidance requested by the Board on new initiatives.<br>
+We are currently looking to expand our Board of Trustees and we could be looking for you! As a member of our highly motivated and enthusiastic Board of Trustees you will play a key role in influencing the strategic direction of the organisation, setting overall policy, defining goals, setting targets and evaluating performance. You will be instrumental in supporting the future development and growth of the organisation, using any specific knowledge or experience you have to help the Board of Trustees reach sound decisions. This will involve scrutinizing Board papers, leading discussions, focusing on key issues, and providing advice and guidance requested by the Board on new initiatives.
 <br>
 If you would relish the opportunity to support our fast paced, challenging, but ultimately values based, person-centred organisation, please download the info pack below, or call 01782 914455 for an informal chat.
-</div>
-</div>
-<br>
+<br>    
 TRUSTEE INFO. PACK (PDF)<br>
+</div>
+</section>
 <?php include_once '../../footer.php'; ?>
