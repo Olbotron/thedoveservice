@@ -1,0 +1,26 @@
+# uploads
+uploads/
+
+# logs
+*.log
+
+# cache
+cache/
+
+# environment variables
+.env
+
+# backups
+*.zip
+*.bak
+
+# Windows files
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Composer
+/vendor/
