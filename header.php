@@ -50,13 +50,13 @@ $root_folder = 'http://localhost/ols/dove-service/';
 
 <nav class="w3-sidebar w3-bar-block 
 w3-collapse w3-top"
-style="z-index:3; width: 400px"
+style="z-index:20; width: 400px"
 id="mySidebar">
 
   <div class="w3-container w3-display-container w3-padding-16">
 
 <div class="w3-padding-24 w3-wide">
-    <img style="max-width: 100%; height: auto;" src="<?=$root_folder?>assets/img/dove-service-logo-horizontal.png" alt="The Dove Service">
+    <img style="max-width: 100%; height: auto; z-index: 20;" src="<?=$root_folder?>assets/img/dove-service-logo-horizontal.png" alt="The Dove Service">
   </div>    
 
 <?php include_once 'sidebar.php'; ?>
@@ -69,7 +69,7 @@ id="mySidebar">
 
 <header class="w3-flex w3-top w3-hide-large
 w3-white w3-xlarge"
-style="align-items:center">
+style="align-items:center; z-index: 100;">
 
   <div class="w3-padding-16 w3-wide">
     <img src="<?=$root_folder?>assets/img/dove-service-logo-horizontal.png" alt="The Dove Service">
@@ -89,8 +89,6 @@ style="cursor:pointer"
 title="Close side menu"
 id="myOverlay">
 </div>
-*/
-?>
 
 <?php
 include_once 'sidebar.php';
@@ -127,7 +125,7 @@ style="display: flex; align-items: center; justify-content: space-between; paddi
 
 <style>
   .main {
-    padding: 18px;
+    padding: none;
   }
 </style>
 

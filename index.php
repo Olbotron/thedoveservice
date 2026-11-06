@@ -12,67 +12,199 @@
   </div>
 </div>
 
-<!-- Product Grid -->
+<style>
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
 
-<section class="w3-grid w3-padding"
-style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+.service-card {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
 
-<article>
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-<img src="assets/img/adult-support-services.jpg"
-alt="Adult Support Services">
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-<p>
-Adult Support Services
-</p>
+/* BACK PANEL */
 
-  </article>
+.card-back {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    background: linear-gradient(
+        180deg,
+        #47b7d9 0%,
+        #004f93 100%
+    );
+    color: white;
 
-  <article>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-<img src="assets/img/childrens-support-services.jpg"
-alt="Children's Support Services">
+    opacity: 0;
+    transition: .4s;
+}
 
-<p>
-Children's Support Services
-</p>
+.service-card:hover .card-back {
+    opacity: 1;
+}
 
-  </article>
+.service-card:hover img {
+    transform: scale(1.1);
+}
 
-  <article>
-<img src="assets/img/employee-wellbeing-services.jpg"
-alt="Employee Wellbeing Services">
+/* FRONT PANEL */
 
-<p>
-Employee Wellbeing Services
-</p>
+.card-front {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 
-  </article>
+    background: linear-gradient(
+        180deg,
+        #004f93 0%,
+        #47b7d9 100%
+    );
 
-  <article>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    transition: transform .5s ease;
+}
 
-<img src="assets/img/self-care.jpg" alt="Self Care">
+.card-front img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
 
-<p>
-Self Care
-</p>
+.card-front h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
 
-  </article>
+/* HOVER EFFECT */
 
+.service-card:hover .card-front {
+    transform: translateY(-100%);
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .8rem 1.6rem;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #005e9d;
+}
+</style>
+
+<section class="services-grid">
+
+    <div class="service-card">
+        <div class="card-front">
+            <img src="assets/img/adult-support-services.jpg" alt="Adult Services">
+            <h3>Adult Services</h3><br>
+        </div>
+
+        <div class="card-back">
+            <h3>Adult Services</h3>
+            <p>We offer counselling and other support to people of all ages who have experienced a bereavement, significant loss, or life changing/limiting illness
+            </p>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-front">
+            <img src="assets/img/childrens-support-services.jpg" alt="Children and Young People">
+            <h3>Children and <br>
+            Young People</h3>
+        </div>
+
+        <div class="card-back">
+            <h3>Children & Young People</h3>
+            <p>The Dove Service can provide counselling and support to children & young people over the age of four, and their families.
+            </p>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-front">
+            <img src="assets/img/employee-wellbeing-services.jpg" alt="Employee Wellbeing">
+            <h3>Employee Wellbeing</h3><br>
+        </div>
+
+        <div class="card-back">
+            <h3>Employee Wellbeing</h3>
+            <p>The well-being of employees is vital to the success of any organisation. Our EAP services can help maintain a pysically and emotionally healthy workforce.
+            </p>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-front">
+            <img src="assets/img/self-care.jpg" alt="Self Care">
+            <h3>Self Care, Advice & Information</h3>
+        </div>
+
+        <div class="card-back">
+            <h3>Self Care</h3>
+            <p>Looking after yourself when you have experienced a bereavement or loss, or are going through a distressing period in your life.
+            </p>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+    </div>
 
 </section>
-<hr style="border: 1px solid #999; width: 50%; margin: 20px auto;">
+
+
+
 <section>
   <img src="assets/img/thanks-to.webp" style="width:100%" alt="Thanks to City of Stoke-on-Trent, Staffordshire County Council, NHS Staffordshire and Stoke-on-Trent Talking Therapies, Newcastle-Under-Lyme Borough Council, Crewe Town Council, National Lottery Community Fund">
 </section>
 
 
 <!-- Subscribe -->
-<section class="w3-container w3-green w3-padding-32">
-<h3 class="w3-wide">Get in touch</h3>
+<section class="w3-container swish-top w3-padding-32">
+<h3 class="swish-banner">Get in touch</h3>
 
-<p>
+<p class="swish-text">
 We can provide face-to-face counselling appointments and remote appointments by phone or online.  Our Dove Buddies social groups run across multiple locations and we have a weekly Bereavement Support Group in Stoke on Trent. 
 </p>
 

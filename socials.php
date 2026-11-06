@@ -1,6 +1,6 @@
 <style>
     .socials {
-        background-color: #c9d5e0;
+        background-color: transparent;
         color: #6a7f98;
         padding: 10px 0;
         display: flex;
@@ -19,6 +19,16 @@
         justify-content: center;
         list-style: none;
         padding: 0;
+    }
+
+    .socials__list_small {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 25px;
+        height: 25px;
     }
 
     .socials__item {
@@ -63,22 +73,12 @@
 
     .socials__link_small {
         background-color: #ffffff;
-        font-size: 1.2rem;
-        margin: 2px 2px;
-        padding: 2px 2px;
+        font-size: 2rem;
+        margin: 5px 5px;
+
+        padding: 8px 8px;
         border-radius: 8px;
-
-        /* width: 30px;
-        height: 30px; */
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: #fff;
-        border: 1px solid rgba(0,0,0,0.05);
-        border-radius: 16px;
-
+        
         box-shadow:
         0 4px 8px rgba(0,0,0,0.05),
         0 8px 24px rgba(0,0,0,0.08);
@@ -159,21 +159,17 @@
 <?php 
     break;
     case 'small': ?>
-<div class="container">
-    <ul class="socials__list">
-                <a href="https://www.facebook.com/TheDoveService/" class="socials__link_small hover-opacity"><li class="socials__item"><i class="fa fa-facebook "></i></li></a>
+    
+                <a href="https://www.facebook.com/TheDoveService/" class="socials__link_small hover-opacity"><i class="fa fa-facebook "></i></a>
+                * 
                 <a href="https://x.com/TheDoveService" class="socials__link_small hover-opacity">
-                <li class="socials__item">
-                    <i class="fa-brands fa-square-x-twitter" style="color: rgb(24, 95, 222);"></i> </li></a>
+                <i class="fa-brands fa-square-x-twitter"></i></a>
+                *   
                 <a href="https://www.instagram.com/thedoveservice/" class="socials__link_small">
-                <li class="socials__item hover-opacity">
-                    <i class="fa   fa-instagram "></i>
-                </li></a>
+                <i class="fa fa-instagram "></i></a>
+                *
                 <a href="https://www.youtube.com/@thedoveservice6968" class="socials__link_small hover-opacity">
-                <li class="socials__item">
-                    <i class="fa fa-youtube "></i></li></a>
-            </ul>
-</div>
+                <i class="fa fa-youtube "></i></a><br><br>
 <?php 
     break;
     default: ?>

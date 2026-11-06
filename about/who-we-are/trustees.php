@@ -12,19 +12,9 @@ include_once "../../hero.php";
 
 ?>
 <style>
-/*     .trustee {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .trustee img {
-        width: 150px;
-        height: auto;
-        margin-right: 20px;
-    } */
     .trustees-grid {
     display: grid;
+    margin: 2rem 2rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
@@ -161,10 +151,15 @@ include_once "../../hero.php";
 <h3>YOU</h3>
 <h4>Become a Trustee</h4>
 We are currently looking to expand our Board of Trustees and we could be looking for you! As a member of our highly motivated and enthusiastic Board of Trustees you will play a key role in influencing the strategic direction of the organisation, setting overall policy, defining goals, setting targets and evaluating performance. You will be instrumental in supporting the future development and growth of the organisation, using any specific knowledge or experience you have to help the Board of Trustees reach sound decisions. This will involve scrutinizing Board papers, leading discussions, focusing on key issues, and providing advice and guidance requested by the Board on new initiatives.
-<br>
+</div>
+</section>
+<section>
+<section class="w3-container swish-top w3-padding-32">
+<h3 class="swish-banner">Get in touch</h3>
+<p class="swish-text">
 If you would relish the opportunity to support our fast paced, challenging, but ultimately values based, person-centred organisation, please download the info pack below, or call 01782 914455 for an informal chat.
 <br>    
 TRUSTEE INFO. PACK (PDF)<br>
-</div>
+
 </section>
 <?php include_once '../../footer.php'; ?>
