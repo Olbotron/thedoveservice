@@ -1,6 +1,18 @@
 <?php include_once '../header.php'; ?>
-<h1>Testimonials</h1>
+<?php
 
+$hero_title = "Testimonials";
+
+$hero_image = $root_folder .
+    "assets/img/testimonials.webp";
+
+$hero_subtitle =
+    "Feedback from our clients is important to us. It helps us to maintain and improve the quality of services we provide within our local community.";
+
+include_once "../hero.php";
+
+?>
+<section class="inner-container clearer-text">
 <h2>WHY LEAVE A TESTIMONIAL?</h2>
 Each testimonial we receive is important to the Dove Service. This is because client feedback helps us to maintain and improve the quality of services we provide within our local community. Testimonials also allow us to share client experiences of our services with our funding partners. Partial funding helps keep our core services running to support local communities in the future.<br>
 <br>
@@ -27,7 +39,7 @@ Each testimonial we receive is important to the Dove Service. This is because cl
         opacity 0.8s ease,
         transform 0.8s ease;
 
-    min-height: 250px;
+    min-height: 550px;
 
     box-shadow:
         0 4px 12px rgba(f,0,0,0.08);
@@ -470,5 +482,6 @@ Michelle<br>
 <br>
 This service has been a life line for me and I thank the Dove service for that. It has helped me tremendously and I have made some very good friends.<br>
 Sam<br>
+</section>
 
 <?php include_once '../footer.php'; ?>

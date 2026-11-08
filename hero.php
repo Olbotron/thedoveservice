@@ -67,6 +67,3 @@
     </div>
 
 </section>
-<script>
-    console.log("Hero section loaded successfully.");
-</script>

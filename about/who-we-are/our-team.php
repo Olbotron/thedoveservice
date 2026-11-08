@@ -28,53 +28,7 @@ Please take a moment to watch our info video, in which Charlie O’Dell (CEO) ex
 Our team is staffed of around 35 people, including our administrative team, finance officer, project workers, sessionally paid counsellors, and volunteers. As an organisation, we think investing in the development of the counselling profession is important to our team, so we take on a small number of placement counsellors every year. Each of our placement counsellors is matched with a more experienced mentor from within our counselling team.<br>
 <br>
 <style>
-    .team-grid {
-    display: grid;
-    margin: 2rem 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
 
-.team-card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.team-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-div.team-credentials {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-div.team-name-role {
-    margin-left: 1.2rem;
-}
-div.team-name-role h4 {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: small-caps;
-}
-
-.role {
-    font-weight: 600;
-    color: #6c757d;
-}
-
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 </style>
 
@@ -123,9 +77,12 @@ div.team-name-role h4 {
         </div>
     </article>
 </div>
-
+</div><!-- inner-container -->
+<section class="swish-top-banner swish-top-yellow">
 <section class="swish-top">
 <?php 
 $socials = 'large';
-include '../../socials.php'; ?>
-<?php include_once '../../footer.php'; ?>
+include '../../socials.php'; 
+
+$pageTheme = 'home';
+include_once '../../footer.php'; ?>

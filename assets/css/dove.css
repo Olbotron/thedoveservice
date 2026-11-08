@@ -125,12 +125,22 @@ h2.banner4{
     }
 
 }
-/*-- END TWO SECTION*/
-.site-footer {
-    background:
-        url('../img/swish.webp') top center no-repeat,
-        #d7e5f3;
 
+.text-center {
+    text-align: center;
+  width: 100%;
+  height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/*-- END TWO SECTION*/
+/* Base Footer Styling */
+.site-footer {
+    background-color: #d7e5f3;
+
+    background-position: top center;
+    background-repeat: no-repeat;
     background-size: 100% auto;
 
     padding-top: 240px;
@@ -138,10 +148,25 @@ h2.banner4{
     padding-right: 120px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 3rem;  
-    
-    padding: 3rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+/* Theme-specific swishes */
+.site-footer.swish-yellow {
+    background-image: url('../img/swish-yellow.webp');
+}
+
+.site-footer.swish-green {
+    background-image: url('../img/swish-green.webp');
+}
+
+.site-footer.swish-blue {
+    background-image: url('../img/swish-blue.webp');
+}
+
+.site-footer.swish-pink {
+    background-image: url('../img/swish-pink.webp');
 }
 
 .footer-columns {
@@ -197,8 +222,72 @@ h2.banner4{
 
 }
 
-.swish-top{
+/*
+TEAM AND TRUSTEES PAGES
+*/
+    .team-grid, .trustee-grid {
+    display: grid;
+    margin: 2rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.team-card, .trustee-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+
+.team-card img, .trustee-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+}
+
+div.team-credentials, div.trustee-credentials {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+div.team-name-role h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: small-caps;
+}
+
+.clearer-text {
+    color: #0E2332;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .team-grid, .trustee-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*SWISHES*/
+.swish-top-yellow{
   background-color: #FFD902;
+}
+
+.swish-top-green{
+  background-color: #00A651;
+} 
+
+.swish-top-blue{
+  background-color: #0771CB;
+}
+
+.swish-top-pink{
+  background-color: #FDD0A6;
 }
 
 .swish-banner{

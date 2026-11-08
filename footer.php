@@ -1,8 +1,15 @@
-<style>
+<?php 
+$swishColours = [
+    'support' => 'green',
+    'children' => 'blue',
+    'allow' => 'pink',
+    'home' => 'yellow'
+];
 
-</style>
+$swishColour = $swishColours[$pageTheme] ?? 'yellow';
+?>
 
-<footer id="footer" class="site-footer">
+<footer id="footer" class="site-footer swish-<?= $swishColour ?>">
 
     <div class="footer-columns">
 
@@ -87,7 +94,7 @@
 
 
 <div class="w3-center w3-padding-24 footer-blurb">
-2026 &#64; The Dove Service
+<?= date('Y') ?> &#64; The Dove Service
 <hr style="border: 1px solid #333; width: 80%; margin: 20px auto;">
 Powered by <a href="https://www.changethepage.com"
 title="Change The Page - Web Design & Development"

@@ -193,15 +193,26 @@
 
 </section>
 
+<section class="two-columns">
+    <div class="column">
+        <h2 style="font-size: 2.4rem; margin-bottom: -20px;">SHARING EXPERIENCES</h2>
+        <br>
+        Please take a moment to watch this video, where our CEO <strong>Charlie O’Dell</strong> explains what we do as an organisation and how we can help you cope with a bereavement, <nobr>life-changing</nobr> illness or significant loss.
+    </div>
 
+    <div class="column">
+       <iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/ySU_IOn2HA0?si=8iSyOzwPeyEVnWnd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
 
 <section>
+  <h2 class="banner1">Fundraising Partners</h2>
   <img src="assets/img/thanks-to.webp" style="width:100%" alt="Thanks to City of Stoke-on-Trent, Staffordshire County Council, NHS Staffordshire and Stoke-on-Trent Talking Therapies, Newcastle-Under-Lyme Borough Council, Crewe Town Council, National Lottery Community Fund">
 </section>
 
 
 <!-- Subscribe -->
-<section class="w3-container swish-top w3-padding-32">
+<section class="w3-container swish-top-banner swish-top-yellow">
 <h3 class="swish-banner">Get in touch</h3>
 
 <p class="swish-text">
@@ -210,5 +221,6 @@ We can provide face-to-face counselling appointments and remote appointments by 
 
 </section>
 <?php
+  $pageTheme = 'home';
   include_once './footer.php';
 ?>
