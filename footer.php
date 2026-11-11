@@ -92,13 +92,48 @@ $swishColour = $swishColours[$pageTheme] ?? 'yellow';
 </footer>
 
 
-<div class="w3-center w3-padding-24 footer-blurb">
-<?= date('Y') ?> &#64; The Dove Service
-<hr style="border: 1px solid #333; width: 80%; margin: 20px auto;">
-Powered by <a href="https://www.changethepage.com"
-title="Change The Page - Web Design & Development"
-target="_blank"
-class="w3-hover-opacity">
-<strong>www.changethepage.com</strong></a>
+    <div class="w3-center w3-padding-24 footer-blurb">
+    <?= date('Y') ?> &#64; The Dove Service
+    <hr style="border: 1px solid #333; width: 80%; margin: 20px auto;">
+    Powered by <a href="https://www.changethepage.com"
+    title="Change The Page - Web Design & Development"
+    target="_blank"
+    class="w3-hover-opacity">
+    <strong>www.changethepage.com</strong></a>
+
+    </div>
 
 </div>
+</div>
+</div>
+
+<script>
+// Accordion
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show","");
+  }
+}
+
+// Open sidebar accordion on page load
+document.getElementById("myBtn").click();
+
+// Open sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+// Close sidebar
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
