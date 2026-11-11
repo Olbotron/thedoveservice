@@ -221,6 +221,6 @@ We can provide face-to-face counselling appointments and remote appointments by 
 
 </section>
 <?php
-  $pageTheme = 'home';
+  $pageTheme = 'children';
   include_once './footer.php';
 ?>

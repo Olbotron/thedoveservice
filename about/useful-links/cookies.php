@@ -23,4 +23,7 @@ This data is solely used to enhance the user's experience when navigating a webs
 This website utilises Google Analytics, a web service offered by Google that tracks and reports on web traffic coming in to our site. This data is collected from our site by Google and processed in to an ongoing series of reports that allows us to see view stats on page visits, repeat visits, most popular pages and how people found our site. This helps us to determine which sections of our website are attracting the most interest and which sections need improving.<br>
 <br>
 All data collected is done so anonymously, no personal information is attached to any data that's stored.
-<?php include_once "../../footer.php";?>
+<?php
+  $pageTheme = 'children';
+  include_once '../../footer.php';
+?>

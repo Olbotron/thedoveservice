@@ -57,7 +57,14 @@ include_once "../hero.php";
         margin: 2rem 0;
     }
 
-
+    .comments-textarea {
+        width: 100%;
+        height: 100px;
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
 </style>
 <section class="testimonial-form">
 <h2 class="banner1">SHARE A TESTIMONIAL ABOUT YOUR <br>
@@ -82,11 +89,15 @@ Are you experiencing issues submitting your feedback? Contact @Enquiries<br>
 DID YOU KNOW?<br>
 Leaving a testimonial is not the only way our clients have supported our services. Being a charity is always a challenge, and a large part of our funding is generated through donations or self-fundraising. If you would like to support the Dove Service through a fundraiser, you can find more information on our fundraising page.<br> 
 <br>
-YOU CAN ALSO LEAVE A TESTIMONIAL VIA<br> SOCIAL MEDIA<br>
-Facebook<br>
+<h2 class="banner1">
+    YOU CAN ALSO LEAVE A TESTIMONIAL VIA<br> SOCIAL MEDIA<br>
+    <?php $socials = 'medium';
+    include '../socials.php'; ?>
+</h2>
+<!--Facebook<br>
  Twitter<br>
  Instagram<br>
- Youtube<br>
+ Youtube<br>-->
 <br>
 TESTIMONIALS ARCHIVE<br>
 <br>
@@ -109,4 +120,13 @@ This service has been a life line for me and I thank the Dove service for that. 
 Sam<br>
 </section>
 
-<?php include_once '../footer.php'; ?>
+<section class="w3-container swish-top-banner swish-top-yellow">
+<h3 class="swish-banner">DID YOU KNOW?</h3>
+
+<p class="swish-text">
+
+Leaving a testimonial is not the only way our clients have supported our services. Being a charity is always a challenge, and a large part of our funding is generated through donations or self-fundraising. If you would like to support the Dove Service through a fundraiser, you can find more information on our fundraising page.
+</p>
+</section>
+<?php $pageTheme = 'home';
+include_once '../footer.php'; ?>

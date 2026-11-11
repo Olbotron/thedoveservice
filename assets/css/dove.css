@@ -71,7 +71,7 @@ h2.banner4{
 .inner-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
 }
 
 /*TWO SECTION*/
@@ -262,7 +262,7 @@ div.team-name-role h4 {
 }
 
 .clearer-text {
-    color: #0E2332;
+    color: #0771CB;
     font-size: 1.2em;
 }
 

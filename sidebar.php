@@ -1,6 +1,6 @@
 <?php
 
-$root_folder = '/ols/dove-service/';
+//$root_folder = 'https://www.changethepage.com/thedoveservice/';
 
 $current_page = basename($_SERVER['PHP_SELF']);
 $current_url  = $_SERVER['REQUEST_URI'];

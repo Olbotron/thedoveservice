@@ -13,6 +13,7 @@ $hero_subtitle =
 include_once "../../hero.php";
 
 ?>
+<section class="inner-container clearer-text">
 <h2>OUR STANDARDS</h2>
 Please take a moment to watch our info video, in which Charlie O’Dell (CEO) explains the Dove Service’s Quality standards.<br>
 <br>
@@ -22,10 +23,10 @@ Please take a moment to watch our info video, in which Charlie O’Dell (CEO) ex
 include '../../socials.php'; ?>
 
 <br>
-<h2 class="banner3">BRITISH ASSOCIATION FOR COUNSELLING AND PSYCOTHERAPY</h2>
+<h2 class="banner3">BRITISH ASSOCIATION FOR COUNSELLING AND PSYCHOTHERAPY</h2>
 Our counselling services are accredited by the British Association for Counselling and Psychotherapy (BACP), and we can be found on the BACP Accredited Services Directory. To maintain quality standards, we work within the BACP “Ethical Framework for the Counselling Professions” and are subject to the BACP Professional Conduct Procedures. Many of our counsellors are accredited or are working towards accreditation, and we were the first organisation to have all of our counselling team on the BACP Register of Counsellors and Psychotherapists.<br>
 <br>
-<img src="bacp-logo.png" alt="BACP Logo" width="100" height="100"><br>
+<img src="<?= $root_folder ?>assets/img/BACP_accredited_service_logo.png" alt="BACP Logo" style="background-color: #ffffff; padding-left: 20px; padding-right: 20px;border-radius: 10px;"><br>
 <h2>COUNSELLING DIRECTORY</h2>
 The Counselling Directory aims to promote the benefits of counselling while making the process of finding a therapist that is right for you as simple as possible. They work closely with counsellors, psychotherapists and organisations to ensure the best service and quality standards possible. To find us on the Counselling Directory or to find out more information and articles on counselling, go to the Counselling Directory<br>
 <br>
@@ -43,4 +44,8 @@ PDF to "TDS Equality, Diversity & Inclusion Strategy"<br>
 <br>
 CredAbility Logo 1<br>
 CredAbility Logo
-<?php include '../../footer.php';?>
+</section>
+<?php
+  $pageTheme = 'children';
+  include_once '../../footer.php';
+?>

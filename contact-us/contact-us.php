@@ -1,5 +1,10 @@
 <?php include_once "../header.php";?>
+
 <h1>Contact Us</h1>
+
+<section class="inner-container two-columns clearer-text"
+style="font-size: 1rem;">
+<div class="column">
 
 <h2>HEAD OFFICE</h2>
 
@@ -46,19 +51,10 @@ For up-to-date Timetables for the 101 service, please follow the link below or s
 101 BUS SERVICE (MON - FRI)
 ##############################
 </span>
-<br>
-Contact Us<br>
-Facebook<br>
-BlueSky<br>
-Instagram<br>
-Youtube<br>
-<br>
-CONTACT US BY SOCIAL MEDIA<br>
 
-#######################################
 </span>
-
-<hr>
+</div>
+<div class="column">
 <h2>ENQUIRE ABOUT OUR SERVICES</h2>
 
 <span style="color: red;">
@@ -97,4 +93,19 @@ The data submitted via this form is confidential and will not be shared with any
 The data supplied will be used to distribute requested information regarding our services via post. Once this process has been completed, your data will be deleted from our database within a six month period. If you require further information after this period, you will be required to resubmit your contact details.
 
 The Dove Service is fully compliant with General Data Protection Regulation (GDPR) (EU).
-<?php include_once "../footer.php";?>
+</div>
+</section>
+
+<!-- Subscribe -->
+<section class="swish-top-banner swish-top-yellow">
+<p class="swish-text">
+
+<section>
+    <?php 
+    $socials = 'large';
+    include_once "../socials.php"; ?>
+</section>
+
+<?php 
+$pageTheme = 'home';
+include_once "../footer.php";?>

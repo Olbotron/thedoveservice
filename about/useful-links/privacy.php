@@ -1,7 +1,7 @@
 <?php
   include_once '../../header.php';
 ?>
-<section class="privacy-policy">
+<section class="inner-container clearer-text">
 
     <h1>Privacy Policy</h1>
 
@@ -75,5 +75,6 @@
 
 </section>
 <?php
+  $pageTheme = 'children';
   include_once '../../footer.php';
 ?>

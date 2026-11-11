@@ -16,7 +16,6 @@ $swishColour = $swishColours[$pageTheme] ?? 'yellow';
         <!-- LEFT COLUMN -->
 
         <article class="footer-column">
-
             <h4>Head Office</h4>
 
             <address>

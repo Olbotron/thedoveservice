@@ -1,4 +1,5 @@
 <?php include_once "../../header.php";?>
+<section class="inner-container clearer-text">
 <h1>Terms and Conditions</h1>
 
 <h2>TERMS AND CONDITIONS</h2>
@@ -32,5 +33,10 @@ Occasionally this website may post external links to other websites. These links
 <br>
 The use of this website and any dispute is subject to the laws of the United Kingdom (UK) and the European Union (EU).<br>
 <br>
-<span style="font-size: 14pt; color: pink;">KEEP THESE LINKS HERE?? </span><a href="cookie-policy.php">Cookie Policy</a> | <a href="privacy-policy.php">Privacy Policy</a>
-<?php include_once "../../footer.php";?>
+<span style="font-size: 14pt; color: red; background-color: yellow;">KEEP THESE LINKS HERE?? </span><a href="cookie-policy.php">Cookie Policy</a> | <a href="privacy-policy.php">Privacy Policy</a>
+
+</section>
+<?php
+  $pageTheme = 'children';
+  include_once '../../footer.php';
+?>
