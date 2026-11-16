@@ -218,9 +218,10 @@ include_once "../../hero.php";
 <p class="swish-text">
 If you would relish the opportunity to support our fast paced, challenging, but ultimately values based, person-centred organisation, please download the info pack below, or call <strong style="font-size: 2rem;"">01782 914455</strong> for an informal chat.<br>
 <br>    
-<a href="../../extra/Trustee-Info-Pack-Oct-17.pdf" target="_blank" class="download">SAFEGUARDING POLICY STATEMENT <i class="fa-regular fa-circle-down" class="download-icon"></i></a><br>
+<a href="../../pdfs/Trustee-Info-Pack-Oct-17.pdf" target="_blank" class="download">SAFEGUARDING POLICY STATEMENT <i class="fa-regular fa-circle-down" class="download-icon"></i></a><br>
 <?php 
 $socials = 'large';
+include '../../socials.php';
 
 $pageTheme = 'home';
 include '../../footer.php'; ?>

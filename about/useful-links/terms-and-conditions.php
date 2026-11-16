@@ -1,9 +1,22 @@
 <?php include_once "../../header.php";?>
+<?php
+$hero_title = "Terms and Conditions";
+$hero_image = $root_folder .
+    "assets/img/standards.webp";
+include_once "../../hero.php";
+?>
 <section class="inner-container clearer-text">
-<h1>Terms and Conditions</h1>
 
 <h2>TERMS AND CONDITIONS</h2>
-By continuing to browse this site you are agreeing to our Terms and Conditions which are bound together with our Privacy Policy, this governs the Dove Service’s relationship with you in relation to this website. If you disagree with our terms and conditions, it is recommended that you cease from using this website<br>
+By continuing to browse this site 
+you are agreeing to our Terms and 
+Conditions which are bound together 
+with our Privacy Policy, this 
+governs the Dove Service's 
+relationship with you in relation to 
+this website. If you disagree with our 
+terms and conditions, it is recommended 
+that you cease from using this website<br>
 <br>
 The term “You” or “User” refers to the viewer of this website, whereas the term “The Dove Service”, “Us” or “We” refers to the owner of the website whose registered office is located at:<br>
 <br>

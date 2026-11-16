@@ -1,9 +1,22 @@
-<?php include_once '../../header.php'; ?>
-<h1>Dove Buddies</h1>
+<?php 
+include_once '../../header.php'; 
 
-<h2>WHERE WE MEET...</h2>
-<h3>Keele Cemetery Community Room</h3>  
-<br>
+$hero_title = "Dove Buddies";
+
+$hero_image = $root_folder .
+    "assets/img/dove-buddies.webp";
+
+$hero_subtitle =
+    "Social friendship groups";
+
+include_once "../../hero.php";
+?>
+
+<section class="inner-container">
+<div class="two-columns">
+<div>
+<h2 class="banner3">WHERE WE MEET...</h2>
+<h3>Keele Cemetery Community Room</h3>
 Keele Road<br>
 Keele<br>
 Newcastle-under-Lyme<br>
@@ -15,7 +28,6 @@ ST5 5AB<br>
 Second Tuesday of the month<br>
 <br>
 <h3>Newcastle under Lyme - Brampton Park Museum</h3>
-<br>
 Brampton Park<br>
 Newcastle under Lyme<br>
 Staffordshire<br>
@@ -26,7 +38,6 @@ ST5 OQP<br>
 First Wednesday of the month<br>
 <br>
 <h3>Trentham Gardens – The Rotisserie Cafe</h3>
-<br>
 Stone Road<br>
 Trentham<br>
 Stoke-on-Trent<br>
@@ -37,8 +48,7 @@ ST4 8JG<br>
 <br>
 Third Tuesday of the month<br>
 <br>
-Crewe - Park Life Cafe<br>
-<br>
+<h3>Crewe - Park Life Cafe</h3>
 Queen's Park<br>
 Victoria Avenue<br>
 Crewe<br>
@@ -49,13 +59,14 @@ CW2 7SE<br>
 <br>
 Fourth Tuesday of the month<br>
 <br>
-FOLLOW FOR MORE UPDATES!<br>
-Facebook<br>
- Twitter<br>
- Instagram<br>
- Youtube<br>
+<?php
+$socials = 'medium';
+include '../../socials.php';
+?>
 <br> 
-<h2>DOVE BUDDIES SOCIAL FRIENDSHIP GROUPS</h2>
+</div>
+<div class="column">
+<h2 class="banner3">DOVE BUDDIES SOCIAL FRIENDSHIP GROUPS</h2>
 We recognised that not everyone who experiences a bereavement or loss needs specialist counselling to feel like themselves again. Because of that, we offer social groups across North Staffordshire and Cheshire.<br>
 <br>
 Dove Buddies is our <strong>social friendship group for adults</strong> who have experienced grief and who may be struggling with <strong>social connections, loneliness and isolation.</strong>. The aim of <strong>Dove Buddies</strong> is to forge those connections and organise <strong>activities</strong> that will <strong>engage</strong> group members, <strong>encouraging socialisation</strong> and <strong>re-engagement</strong>.
@@ -88,4 +99,9 @@ Terms of Service *
 I have read and agree to the terms and conditions of submitting my data to the Dove Service under General Data Protection Regulation (GDPR) (EU)
 By submitting this data you are acknowledging that you have read and agree to our Terms & Conditions, also please see our Privacy Policy. The data submitted via this form is confidential and will not be shared with any third party or vendor.
 --> 
-<?php include_once '../../footer.php'; ?>
+</div>
+</div><!-- two-columns -->
+</section><!-- inner-container -->
+<?php 
+$pageTheme = "adults";
+include_once '../../footer.php'; ?>

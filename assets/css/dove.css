@@ -10,6 +10,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
   font-family:"Montserrat",sans-serif;
 }
 h3{
+  font-size: 1.2em;
   color: #CF4C2E;
 }
 h4{
@@ -22,11 +23,10 @@ h5{
 
 
 h2{
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 6px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
   border-radius: 8px;
 }
 
@@ -89,10 +89,9 @@ h2.banner4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 0 2rem 3rem 2rem;
 
     align-items: start;
 }
@@ -132,6 +131,13 @@ h2.banner4{
   height: auto;
     display: block;
     margin: 1rem auto;
+}
+
+
+.responsive-image {
+    max-width: 40vw !important;
+    height: auto;
+    border-radius: 8px;
 }
 
 /*-- END TWO SECTION*/

@@ -144,7 +144,7 @@
             <h3>Adult Services</h3>
             <p>We offer counselling and other support to people of all ages who have experienced a bereavement, significant loss, or life changing/limiting illness
             </p>
-            <a href="#" class="btn">Find Out More</a>
+            <a href="<?php echo $root_folder; ?>services/adults/adult-counselling.php" class="btn">Find Out More</a>
         </div>
     </div>
 
@@ -159,7 +159,7 @@
             <h3>Children & Young People</h3>
             <p>The Dove Service can provide counselling and support to children & young people over the age of four, and their families.
             </p>
-            <a href="#" class="btn">Find Out More</a>
+            <a href="<?php echo $root_folder; ?>services/children-and-young-people/children-counselling.php" class="btn">Find Out More</a>
         </div>
     </div>
 
@@ -173,7 +173,7 @@
             <h3>Employee Wellbeing</h3>
             <p>The well-being of employees is vital to the success of any organisation. Our EAP services can help maintain a pysically and emotionally healthy workforce.
             </p>
-            <a href="#" class="btn">Find Out More</a>
+            <a href="<?php echo $root_folder; ?>services/adults/employee-wellbeing.php" class="btn">Find Out More</a>
         </div>
     </div>
 
@@ -187,7 +187,7 @@
             <h3>Self Care</h3>
             <p>Looking after yourself when you have experienced a bereavement or loss, or are going through a distressing period in your life.
             </p>
-            <a href="#" class="btn">Find Out More</a>
+            <a href="<?php echo $root_folder; ?>services/self-care.php" class="btn">Find Out More</a>
         </div>
     </div>
 

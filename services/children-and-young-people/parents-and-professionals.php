@@ -54,7 +54,7 @@ We do ask that all children under the age of 14 be accompanied to their session 
 <br>
 <em>(NB. This process may vary slightly depending on area)</em>.<br>
 <br>
-<a href="../../extra/Safeguarding-Policy-Statement.pdf" target="_blank" class="download">SAFEGUARDING POLICY STATEMENT <i class="fa-regular fa-circle-down" class="download-icon"></i></a>
+<a href="../../pdfs/Safeguarding-Policy-Statement.pdf" target="_blank" class="download">SAFEGUARDING POLICY STATEMENT <i class="fa-regular fa-circle-down" class="download-icon"></i></a>
 </div>
 <div class="column pack">
 <h2 class="banner4">C&YP RESOURCE PACK</h2>

@@ -41,53 +41,7 @@ include_once "../hero.php";
     line-height: 1.6;
 }
 
-/*ACCORDION*/
-.accordion {
-    margin: 2rem 0;
-}
 
-.accordion-item {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
-}
-
-.accordion-title {
-    width: 100%;
-    padding: 1rem 1.25rem;
-    border: none;
-    background: #f7f7f7;
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.accordion-title:hover {
-    background: #ececec;
-}
-
-.accordion-title::after {
-    content: "+";
-    float: right;
-    font-size: 1.3rem;
-}
-
-.accordion-title.active::after {
-    content: "−";
-}
-
-.accordion-content {
-    display: none;
-    padding: 1.25rem;
-}
-
-.accordion-content.active {
-    display: block;
-}
 </style>
 
 <div class="page-content">
@@ -120,13 +74,14 @@ If you are struggling with certain elements of self-care or would like to develo
 </div>
 
 </section>
-
-
-<h2 class="banner1">THE PRINCIPLE OF SELF-CARE - "IF YOU DON'T LOOK AFTER YOURSELF YOU WILL STRUGGLE TO HELP OTHERS".</h2>
-<h2 class="banner3">WHAT CAN I DO TO HELP MYSELF?</h2>
+<link rel="stylesheet" href="../assets/css/accordian.css">
+<h2 class="banner1">THE PRINCIPLE OF SELF-CARE -<br>
+"IF YOU DON'T LOOK AFTER YOURSELF<br>
+YOU WILL STRUGGLE TO HELP OTHERS".</h2>
 
 <div class="two-columns">
 <div class="column">
+<h2 class="banner3">WHAT CAN I DO TO HELP MYSELF?</h2>
 <div class="accordion">
 
     <div class="accordion-item">
@@ -267,17 +222,23 @@ If you are struggling with certain elements of self-care or would like to develo
 </script>
 </div>
 </div> <!-- column -->
-<div class="column">
+<div class="column" style="text-align: center;">
 <h2 class="banner2">RESOURCES</h2>
 <br>
-GRIEF ALLOWED (PDF)<br>
+
+<img src="<?php echo $root_folder; ?>assets/img/grief-allowed.webp" style="border: 1px solid #000000;" alt="Grief Allowed"><br>
 <br>
-ALLOW GRIEF (PDF)</div><!-- column -->
+<a href="<?php echo $root_folder; ?>pdfs/grief-allowed.pdf" class="download" target="_blank">GRIEF ALLOWED (PDF)</a><br>
+<br>
+
+<img src="<?php echo $root_folder; ?>assets/img/allow-grief-pdf.webp" style="border: 1px solid #000000;" alt="Allow Grief"><br>
+<br>
+<a href="<?php echo $root_folder; ?>pdfs/allow-grief.pdf" class="download"  target="_blank">ALLOW GRIEF (PDF)</a></div><!-- column -->
 </div> <!-- two-columns --> 
 
 <div>
 <h2 class="banner2">MAINTAINING BOUNDARIES</h2>
-At certain times, you may need to say ‘no’ and have boundaries as to what you will and will not be able to undertake, take time out for yourself and aim for a better work/life balance. Remember
+At certain times, you may need to say 'no' and have boundaries as to what you will and will not be able to undertake, take time out for yourself and aim for a better work/life balance. Remember
 
 <ul>
     <li>Be aware of the possible impact on yourself when supporting other people</li>

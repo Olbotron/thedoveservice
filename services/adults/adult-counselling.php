@@ -1,6 +1,16 @@
-<?php include_once "../../header.php";?>
-<h1>Adult Counselling</h1>
-<h2>HOW WE CAN HELP</h2>
+<?php include_once '../../header.php'; 
+
+$hero_title = "Adult Counselling";
+
+$hero_image = $root_folder .
+    "assets/img/adult-counselling.webp";
+
+$hero_subtitle =
+    "How we can help";
+
+include_once "../../hero.php";
+?>
+<section class="inner-container clearer-text">
 We offer counselling and support to people of all ages who have experienced a bereavement, significant loss, or life-changing or limiting illness.  We also work with people who are trying to cope with anticipatory grief, i.e. you or someone you love has been diagnosed with a terminal illness.<br>
 <br>
 We recognise that bereavement impacts everyone differently and that some bereavements can feel a lot harder to talk about than others, such as those associated with suicide, or a traumatic incident.  We also know that the impact of bereavement isn’t always immediate, sometimes people start to struggle months or even years down the line, or just feel very stuck in their grief when it feels as though everyone else has moved on.<br>
@@ -73,4 +83,7 @@ To register for any of these groups, call on 01782 914455 or email @Enquiries an
 <br>
 REGISTER
 Bereavement Drop-in Groups
-<?php include_once "../../footer.php";?>
+</section>
+<?php 
+$pageTheme = 'adults';
+include_once "../../footer.php";?>

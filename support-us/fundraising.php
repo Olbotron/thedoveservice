@@ -43,7 +43,7 @@ To download a Sponsor Form, just click on the link below:<br>
 As a company, you may have had some of your employees who have been helped by us or you might think that we are a suitable partner to help fulfil your organisation’s corporate social responsibility. You could #Helpusfly by
 <br>
 Get your organisation involved with a fundraising event, or name us as your Charity of the Year<br>
-Organise a raffle with the 1st prize being a ‘duvet day’ – giving a member of your staff an extra day off<br>
+Organise a raffle with the 1st prize being a ‘duvet day' - giving a member of your staff an extra day off<br>
 Would your company like to officially sponsor an event or our Annual Conference?
 If your company would like to help us email us @Enquiries<br>
 To download a Sponsor Form click on the link below:<br>

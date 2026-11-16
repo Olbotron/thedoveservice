@@ -1,9 +1,11 @@
 <?php 
+
 $swishColours = [
-    'support' => 'green',
-    'children' => 'blue',
-    'allow' => 'pink',
-    'home' => 'yellow'
+    'adults' => 'blue',
+    'children' => 'yellow',
+    'self-help' => 'peach',
+    'advice' => 'peach',
+    'training' => 'green'
 ];
 
 $swishColour = $swishColours[$pageTheme] ?? 'yellow';
@@ -133,6 +135,18 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
+//ACCORDION
+    document.querySelectorAll('.accordion-title').forEach(button => {
+    button.addEventListener('click', () => {
+
+        button.classList.toggle('active');
+
+        const content = button.nextElementSibling;
+        content.classList.toggle('active');
+    });
+});
+
 </script>
 
 </body>

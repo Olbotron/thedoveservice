@@ -1,7 +1,17 @@
-<?php include_once '../../header.php'; ?>
-<h1>Bereavement Groups</h1>
+<?php include_once '../../header.php'; 
 
-<h2>WHERE TO FIND US...</h2>
+$hero_title = "Bereavement Groups";
+
+$hero_image = $root_folder .
+    "assets/img/bereavement-group.webp";
+
+include_once "../../hero.php";
+?>
+<section class="inner-container clearer-text">
+
+<section class="two-columns">
+    <div>
+<h2 class="banner2">WHERE TO FIND US...</h2>
 <h3>Bescura Family Hub - Car Park D</h3>
 <strong>Port Vale Football Club</strong><br>
 Hamil Road<br>
@@ -10,14 +20,18 @@ Stoke-on-Trent<br>
 Staffordshire<br>
 ST6 1AW<br>
 <br>
-<hr>FOLLOW FOR MORE UPDATES!
-Facebook<br>
-Twitter <span style="color: red; background-color: yellow;">(Twitter / X??)</span><br>
-BlueSky<br>
-Instagram<br>
-Youtube<br>
+<span style="color: red; background-color: yellow;">####
+ADD GOOGLE MAPS LINK HERE
+###
+</span><br>
 <br>
-<h2>BEREAVEMENT GROUPS</h2>
+<hr>
+<?php
+$socials = 'small';
+include '../../socials.php';
+?>
+</div>
+<div><h2 class="banner3">BEREAVEMENT GROUPS</h2>
 <br>
 Our Bereavement Group meets weekly each Wednesday at 1.30 pm at Bescura Family Hub situated at Port Vale Football Club on Hamil Road in Burslem.<br>
 <br>
@@ -29,7 +43,7 @@ The bereavement groups are designed for individuals to attend as and when they f
 <br>
 If you would like to attend a bereavement group, please register at least 24 hours before attending by registering your details below or call us on 01782 914455.<br>
 <br>
-PORT VALE IMAGE ===>>> Bereavement Groups<br>
+<img src="../../assets/img/Port-Vale-FC.webp" alt="Port Vale Football Club" class="responsive-image"><br>
 <br>
 <h2>SIGN UP FOR BEREAVEMENT GROUPS</h2>
 
@@ -78,7 +92,13 @@ Location<br>
 <br>
 <strong>Terms of Service</strong> <span class="required">*</span><br>
 
-<input type="checkbox" name="terms" required value=""> <label for="terms">I have read and agree to the terms and conditions of submitting my data to the Dove Service under General Data Protection Regulation (GDPR) (EU)</label>
+<input type="checkbox" name="terms" required value=""> <label for="terms">I have read and agree to the terms and conditions of submitting my data to the Dove Service under General Data Protection Regulation (GDPR) (EU)
+<br>
+<br>
+By submitting this data you are acknowledging that you have read and agree to our Terms & Conditions, also please see our Privacy Policy. The data submitted via this form is confidential and will not be shared with any third party or vendor. The data supplied will be used to distribute requested information regarding our services via post. Once this process has been completed, your data will be deleted from our database within a six month period. If you require further information after this period, you will be required to resubmit your contact details.</label>
 
-By submitting this data you are acknowledging that you have read and agree to our Terms & Conditions, also please see our Privacy Policy. The data submitted via this form is confidential and will not be shared with any third party or vendor. The data supplied will be used to distribute requested information regarding our services via post. Once this process has been completed, your data will be deleted from our database within a six month period. If you require further information after this period, you will be required to resubmit your contact details.
-<?php include_once '../../footer.php'; ?>
+</section><!-- two-columns -->
+</section><!-- inner-container -->
+<?php 
+$pageTheme = "adults";
+include_once '../../footer.php'; ?>

@@ -1,9 +1,11 @@
+<?php include_once "../../header.php";?>
 <?php
-  include_once '../../header.php';
+$hero_title = "Privacy Policy";
+$hero_image = $root_folder .
+    "assets/img/standards.webp";
+include_once "../../hero.php";
 ?>
 <section class="inner-container clearer-text">
-
-    <h1>Privacy Policy</h1>
 
     <h2>Our Privacy Policy</h2>
 

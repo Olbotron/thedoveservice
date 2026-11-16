@@ -39,16 +39,25 @@
         border-radius: 5px;
     }
 
+    .socials__list_medium {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
     .socials__item_medium {
         background-color: #ffffff;
         font-size: 1.75rem;
-        margin: 0 10px;
+        margin: 0 5px;
         padding: 10px 20px;
         border-radius: 8px;
 
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
 
+        /**/
         display: flex;
         align-items: center;
         justify-content: center;
@@ -144,7 +153,7 @@
     break;
     case 'medium': ?>
 <div class="container">
-    <ul class="socials__list">
+    <ul class="socials__list_medium">
                 <a href="https://www.facebook.com/TheDoveService/" class="socials__link hover-opacity"><li class="socials__item_medium"><i class="fa fa-facebook "></i></li></a>
                 <a href="https://x.com/TheDoveService" class="socials__link hover-opacity">
                 <li class="socials__item_medium"><i class="fa-brands fa-square-x-twitter" style="color: rgb(24, 95, 222);"></i>
