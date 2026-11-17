@@ -24,6 +24,7 @@
     color: white;
     z-index: 2;
     max-width: 900px;
+    padding: 0 1rem;
 }
 
 .hero::before {

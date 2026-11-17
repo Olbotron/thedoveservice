@@ -27,7 +27,7 @@ ADD GOOGLE MAPS LINK HERE
 <br>
 <hr>
 <?php
-$socials = 'small';
+$socials = 'medium';
 include '../../socials.php';
 ?>
 </div>

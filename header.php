@@ -38,7 +38,8 @@
 <script src="https://kit.fontawesome.com/c8410ad0ce.js" crossorigin="anonymous"></script>
 
 <?php 
-$root_folder = 'http://localhost/ols/dove-service/';
+//$root_folder = 'http://localhost/ols/dove-service/';
+$root_folder = 'http://localhost/ols/doveservice/';
 ?>
 
 <link rel="stylesheet" href="<?=$root_folder?>assets/css/dove.css">

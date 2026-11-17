@@ -27,8 +27,9 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        width: 25px;
-        height: 25px;
+        font-size: 0.8rem;
+        width: 12px;
+        height: 12px;
     }
 
     .socials__item {
@@ -82,10 +83,10 @@
 
     .socials__link_small {
         background-color: #ffffff;
-        font-size: 2rem;
-        margin: 5px 5px;
+        font-size: 1rem;
+        margin: 3px 3px;
 
-        padding: 8px 8px;
+        padding: 5px 5px;
         border-radius: 8px;
         
         box-shadow:
@@ -152,7 +153,7 @@
 <?php 
     break;
     case 'medium': ?>
-<div class="container">
+<div class="container" style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
     <ul class="socials__list_medium">
                 <a href="https://www.facebook.com/TheDoveService/" class="socials__link hover-opacity"><li class="socials__item_medium"><i class="fa fa-facebook "></i></li></a>
                 <a href="https://x.com/TheDoveService" class="socials__link hover-opacity">
@@ -168,17 +169,17 @@
 <?php 
     break;
     case 'small': ?>
-    
+            <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
                 <a href="https://www.facebook.com/TheDoveService/" class="socials__link_small hover-opacity"><i class="fa fa-facebook "></i></a>
-                * 
+                |
                 <a href="https://x.com/TheDoveService" class="socials__link_small hover-opacity">
                 <i class="fa-brands fa-square-x-twitter"></i></a>
-                *   
+                |  
                 <a href="https://www.instagram.com/thedoveservice/" class="socials__link_small">
                 <i class="fa fa-instagram "></i></a>
-                *
+                |
                 <a href="https://www.youtube.com/@thedoveservice6968" class="socials__link_small hover-opacity">
-                <i class="fa fa-youtube "></i></a><br><br>
+                <i class="fa fa-youtube "></i></a></div>
 <?php 
     break;
     default: ?>

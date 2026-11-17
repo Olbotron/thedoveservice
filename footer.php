@@ -68,8 +68,8 @@ $swishColour = $swishColours[$pageTheme] ?? 'yellow';
             </p>
 
             <p>
-                <i class="fa fa-envelope"></i>
-                enquiries@thedoveservice.org.uk
+                <nobr><i class="fa fa-envelope"></i>
+                enquiries@thedoveservice.org.uk</nobr>
             </p>
 
             <hr>
