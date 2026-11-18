@@ -8,7 +8,7 @@ $hero_image = $root_folder .
     "assets/img/team.webp";
 
 $hero_subtitle =
-    "Supporting adults, children, families and professionals through emotionally tough times.";
+    "Supporting adults, children, families and \n<br>professionals through emotionally tough times.";
 
 include_once "../../hero.php";
 

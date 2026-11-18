@@ -13,7 +13,8 @@ $hero_subtitle =
 include_once "../../hero.php";
 
 ?>
-<h2 class="banner1">ARE YOU A PARENT OR PROFESSIONAL WHO IS WORRIED ABOUT A CHILD OR YOUNG PERSON?</h2>
+<h2 class="banner1">ARE YOU A PARENT OR PROFESSIONAL WHO IS<br> 
+    WORRIED ABOUT A CHILD OR YOUNG PERSON?</h2>
 
 <section class="two-columns">
     <div class="column">
@@ -35,13 +36,13 @@ include_once "../../hero.php";
         <script>
             console.log("2-columns section loaded successfully.");
         </script>
-    </div>
+    </div><?php 
+$socials = 'medium';
+include '../../socials.php'; ?>
 </section>
 
 
-<?php 
-$socials = 'medium';
-include '../../socials.php'; ?>
+
 
 <h2 class="banner2">MAKING A REFERAL</h2>
 
@@ -78,4 +79,6 @@ If the child or young person you would like to refer is outside of Staffordshire
 Please contact us on 01782 914455 for more information
 </div>
 </section>
-<?php include_once '../../footer.php'; ?>
+<?php 
+$pageTheme = 'yellow';
+include_once '../../footer.php'; ?>

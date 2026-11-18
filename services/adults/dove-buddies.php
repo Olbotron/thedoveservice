@@ -37,7 +37,7 @@ ST5 OQP<br>
 <br>
 First Wednesday of the month<br>
 <br>
-<h3>Trentham Gardens – The Rotisserie Cafe</h3>
+<h3>Trentham Gardens - The Rotisserie Cafe</h3>
 Stone Road<br>
 Trentham<br>
 Stoke-on-Trent<br>
@@ -66,7 +66,7 @@ include '../../socials.php';
 <br> 
 </div>
 <div class="column">
-<h2 class="banner3">DOVE BUDDIES SOCIAL FRIENDSHIP GROUPS</h2>
+<h2 class="banner3">DOVE BUDDIES SOCIAL<br>FRIENDSHIP GROUPS</h2>
 We recognised that not everyone who experiences a bereavement or loss needs specialist counselling to feel like themselves again. Because of that, we offer social groups across North Staffordshire and Cheshire.<br>
 <br>
 Dove Buddies is our <strong>social friendship group for adults</strong> who have experienced grief and who may be struggling with <strong>social connections, loneliness and isolation.</strong>. The aim of <strong>Dove Buddies</strong> is to forge those connections and organise <strong>activities</strong> that will <strong>engage</strong> group members, <strong>encouraging socialisation</strong> and <strong>re-engagement</strong>.
