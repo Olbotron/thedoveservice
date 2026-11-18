@@ -47,6 +47,12 @@
         margin: 0;
     }
 
+    .medium-media {
+        background-color: #0000ff;
+        color: #ffffff;
+        font-size: 1.25rem;
+    }
+
     .socials__item_medium {
         background-color: #ffffff;
         font-size: 1.75rem;
@@ -128,12 +134,17 @@
     }
 </style>
 
-<?php switch($socials){
+<?php 
+if(!isset($socials_title)){
+    $socials_title = "Follow us on Social Media";
+}
+
+switch($socials){
     case 'large':  ?>
 <section class="socials">
     <div class="container">
         <div class="socials__inner">
-            <h2 class="socials__title">Follow us on social media</h2>
+            <h2 class="socials__title"><?php echo $socials_title; ?></h2>
             <ul class="socials__list">
                 <a href="https://www.facebook.com/TheDoveService/" class="socials__link hover-opacity"><li class="socials__item"><i class="fa fa-facebook "></i> Facebook</li></a>
                 <a href="https://x.com/TheDoveService" class="socials__link hover-opacity">
@@ -153,18 +164,20 @@
     break;
     case 'medium': ?>
 <div class="container">
-    <ul class="socials__list_medium">
-                <a href="https://www.facebook.com/TheDoveService/" class="socials__link hover-opacity"><li class="socials__item_medium"><i class="fa fa-facebook "></i></li></a>
-                <a href="https://x.com/TheDoveService" class="socials__link hover-opacity">
-                <li class="socials__item_medium"><i class="fa-brands fa-square-x-twitter" style="color: rgb(24, 95, 222);"></i>
-                </li></a>
-                <a href="https://www.instagram.com/thedoveservice/" class="socials__link hover-opacity">
-                <li class="socials__item_medium hover-opacity">
-                <i class="fa fa-instagram "></i></li></a>
-                <a href="https://www.youtube.com/@thedoveservice6968" class="socials__link hover-opacity">
-                <li class="socials__item_medium"><i class="fa fa-youtube "></i></li></a>
-            </ul>
-</div>
+    <div class="socials__inner">
+        <h2 class="medium-media"><?=$socials_title?></h2>
+        <ul class="socials__list_medium">
+            <a href="https://www.facebook.com/TheDoveService/" class="socials__link hover-opacity"><li class="socials__item_medium"><i class="fa fa-facebook "></i></li></a>
+            <a href="https://x.com/TheDoveService" class="socials__link hover-opacity">
+            <li class="socials__item_medium"><i class="fa-brands fa-square-x-twitter" style="color: rgb(24, 95, 222);"></i>
+            </li></a>
+            <a href="https://www.instagram.com/thedoveservice/" class="socials__link hover-opacity">
+            <li class="socials__item_medium hover-opacity">
+            <i class="fa fa-instagram "></i></li></a>
+            <a href="https://www.youtube.com/@thedoveservice6968" class="socials__link hover-opacity">
+            <li class="socials__item_medium"><i class="fa fa-youtube "></i></li></a>
+        </ul>
+    </div>
 <?php 
     break;
     case 'small': ?>
